@@ -1,0 +1,16 @@
+# Nom premier workflow
+name: test CI/CD
+
+# quand le workflow est déclenché
+on: workflow_dispatch
+
+# actions à réaliser
+jobs: 
+  premier job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Dit bonjour
+        run: echo "bonjour"
+      - name: Dit au revoir
+        run: echo "Goodbye !"
